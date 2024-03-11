@@ -104,4 +104,30 @@ inputForm.addEventListener('submit', function(event) {
             xhr.send();
     }
   });
+  
+  function showchatbot() {
+	  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  }
+  
+  function hidechatbot() {
+	var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }  
+  }
+  
+  window.onload = function() {
+            // Get the chatbox element
+            var chatbox = document.getElementById('myDIV');
+
+            // Set its display property to 'none'
+            chatbox.style.display = 'none';
+        };
 

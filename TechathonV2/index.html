@@ -5,7 +5,8 @@
 <title>Satcom Pvt Ltd</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.js"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'/>
 
 <script type="text/javascript" src="js/carouselScript.js"></script>
 <link href="css/carousel.css" rel="stylesheet" type="text/css">
@@ -74,7 +75,7 @@
 				<div class="clear"></div>
 		</div>
 		<div class="clear"></div>
-		<div id="buttons"> <a href="#" id="prev">prev</a> <a href="#" id="next">next</a>
+		<div id="buttons"> <a href="#" class="previous" id="prev">prev</a> <a href="#" class="next" id="next">next</a>
 				<div class="clear"></div>
 		</div>
 </div>
@@ -89,7 +90,7 @@
     <div class="panel">
       <div class="title">
         <h1>Experience the Future!</h1>
-        <h2>Tomorrow is not to far</h2>
+        <h2>Tomorrow is not too far</h2>
       </div>
       <div class="panel-img"><img src="images/img1.jpg" alt="" /></div>
       <div class="content">
@@ -106,7 +107,7 @@
   <div class="boxs2">
     <div class="panel">
       <div class="title">
-        <h1>Experience finest Telecom services</h1>
+        <h1>Experience Telecom services</h1>
         <h2>Its Satcom or nothing..</h2>
       </div>
       <div class="panel-img"><img src="images/img2.jpg" alt="" /></div>
@@ -121,11 +122,35 @@
       </div>
     </div>
   </div>
+  <div class="boxs3">
+    <div class="panel">
+      <div class="title">
+        <h1>Customer service in Telecom.</h1>
+        <h2>Increasing digital customer service</h2>
+      </div>
+      <div class="panel-img"><img src="images/img3.jpg" alt="" /></div>
+      <div class="content">
+        <p>improving & innovating customer journey.</p>
+      </div>
+      <div class="controller">
+        <div class="buttons">
+          <h2><a href="#">MORE</a></h2>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class='search-and-account'>
+		<img class="pointer" height="50" width="90" src="images/chatimage.jpg" alt="" onclick="showchatbot()"/>
+		
+  </div>
   
   <!-- Pop up of chat box  -->
-    <div class="chatbot-container">
+    <div id="myDIV" class="chatbot-container search-and-account">
         <div id="header">
-            <h1>Chatbot</h1>
+            <h1 id="chatbotheader">Chatbot</h1>
+			<h1 class="pointer" style="padding-left:10px" onclick="hidechatbot()">X</h1>
         </div>
         <div id="chatbot">
             <div id="conversation">
