@@ -2,9 +2,10 @@ import json
 import requests
 from requests.auth import HTTPBasicAuth
 
-def createINC(short_desc,desc):
-    auth = HTTPBasicAuth("admin", "LYlI59w=r*sB")
-    uri = "https://dev93933.service-now.com/api/now/table/incident"
+
+def createINC(short_desc, desc):
+    auth = HTTPBasicAuth("admin", "SM3x/!i4vxBD")
+    uri = "https://dev177755.service-now.com/api/now/table/incident"
 
     headers = {
         "Accept": "application/json;charset=utf-8",
@@ -28,8 +29,3 @@ def createINC(short_desc,desc):
         return content['result']['task_effective_number']
     else:
         return "Response Status Code: " + str(r.status_code)
-
-
-
-
-
