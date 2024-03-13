@@ -5,6 +5,12 @@
 <title>TMPH00028</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/jquery-1.9.1.js"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'/>
+<script type="text/javascript" src="js/carouselScript.js"></script>
+<link href="css/carousel.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style-chatbot.css">
 </head>
 <body>
 <div class="social-wrapper">
@@ -23,7 +29,7 @@
 <div class="header">
   <div class="row">
     <div class="logo">
-      <h1>SITE NAME</h1>
+      <h1>SatCom Private LTD</h1>
     </div>
     <div class="menu">
       <ul>
@@ -36,6 +42,36 @@
       </ul>
     </div>
   </div>
+  <div class='search-and-account'>
+		<img class="pointer" height="50" width="90" src="images/chatimage.jpg" alt="" onclick="showchatbot()"/>
+
+  </div>
+
+  <!-- Pop up of chat box  -->
+    <div id="myDIV" class="chatbot-container search-and-account">
+        <div id="header">
+            <h1 id="chatbotheader">Chatbot</h1>
+			<h1 class="pointer" style="padding-left:10px" onclick="hidechatbot()">X</h1>
+        </div>
+        <div id="chatbot">
+            <div id="conversation">
+              <div class="chatbot-message">
+                <p class="chatbot-text">Hi! 👋 it's great to see you!</p>
+              </div>
+            </div>
+            <form id="input-form">
+              <message-container>
+                <input id="input-field" type="text" placeholder="Type your message here">
+                <button id="submit-button"  type="submit" value="Send">
+                  <img class="send-icon" src="images/arrow-small.jpg" alt="">
+                </button>
+              </message-container>
+
+            </form>
+        </div>
+
+    </div>
+
   <div class="clear"></div>
 </div>
 <!-- end of MENU WRAPPER -->
@@ -45,37 +81,29 @@
       <div class="panel">
         <div class="title padBottom">
           <h1>Services</h1>
-          <h2>Lorem ipsum dolor sit amet consectetur adipiscing elit </h2>
+          <h2>The customer should be able to follow the customer's customer service</h2>
         </div>
         <div class="clear"></div>
         <div class="content marbottom30"> <img src="images/img3.jpg"/>
-          <h3>Fusce eleifend sapi</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit.</p>
-          <p>Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin. </p>
+          <h3>Customer Service</h3>
+          <p>It's important to have a good customer service, a customer service provider. Hendrerit of the Fleet.</p>
+          <p>Customer service is the support you offer your customers — both before and after they buy and use your products or services — that helps them have an easy and enjoyable experience with you. Offering amazing customer service is important if you want to retain customers and grow your business. </p>
         </div>
         <div class="clear"></div>
         <div class="content marbottom30"> <img src="images/img1.jpg"/>
-          <h3>Vivamus molestie gravida</h3>
-          <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. </p>
-          <p>Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum </p>
+          <h3>We live with a new technology.</h3>
+          <p>A new alliance announced during MWC could reshape the future of mobile networks and telecommunications by integrating AI into radio access networks (RAN). </p>
+          <p>The AI-RAN Alliance brings together tech giants like Amazon, Microsoft, NVIDIA, and Samsung, along with major telecom companies.</p>
         </div>
         <div class="clear"></div>
         <div class="content marbottom30"> <img src="images/img2.jpg"/>
-          <h3>FCras iaculis ultricies nulla.</h3>
-          <p>Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare </p>
-          <p>nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+          <h3>Communication Through Internet.</h3>
+          <p>The Internet, sometimes called simply "the Net," is a worldwide system of computer networks -- a network of networks in which users at any one computer can, if they have permission, get information from any other computer (and sometimes talk directly to users at other computers)</p>
         </div>
         <div class="clear"></div>
         <div class="content marbottom30"> <img src="images/img1.jpg"/>
-          <h3>Aliquam tincidunt mauris.</h3>
-          <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, </p>
-          <p>ectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius</p>
-        </div>
-        <div class="clear"></div>
-        <div class="content"> <img src="images/img2.jpg"/>
-          <h3>Cras ornare tristique elit.</h3>
-          <p>dipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. </p>
-          <p>Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+          <h3>Cost Of Telecom. </h3>
+          <p>The Satcom aims to collect a revenue of ₹1.2 trillion from the telecom sector in FY25, it said in the interim budget presented in parliament on Thursday. </p>
         </div>
       </div>
       <div class="clear"></div>
@@ -83,8 +111,8 @@
     <div class="right-panel">
       <div class="contact-panel">
         <div class="title">
-          <h1>PROIN A RISUS</h1>
-          <span>Vestibulum suscipit nib</span></div>
+          <h1>Customer Details</h1>
+          <span>Provide all info</span></div>
         <div class="form">
           <ul>
             <li>
@@ -111,34 +139,20 @@
       <div class="clear"></div>
       <div class="panel martop">
         <div class="title">
-          <h1>DUIS AT LACUS</h1>
-          <h2>Sed sagittis mi scelerisque</h2>
+          <h1>Company business more Info</h1>
+          <h2>References</h2>
         </div>
         <div class="content">
           <ul>
-            <li><a href="#">Posuere justo velitet laotinoc us</a></li>
-            <li><a href="#">Donec egestas diam sed odiotio</a></li>
-            <li><a href="#">Integer eu nibh vitae massa kun</a></li>
-            <li><a href="#">Lorem ipsum dolor sit amet, con</a></li>
+            <li><a href="#">Wireless infrastructure equipment</a></li>
+            <li><a href="#">Landline infrastructure equipment</a></li>
+            <li><a href="#">Networking devices</a></li>
+            <li><a href="#">chat with agent on any queries</a></li>
           </ul>
         </div>
         <div class="clear"></div>
       </div>
       <div class="clear"></div>
-      <div class="contact-panel padding-bottm">
-        <div class="title">
-          <h1>ALIQUAM ADIPIS</h1>
-          <span>Suspendisse ut urna enim</span></div>
-        <div class="search">
-          <ul>
-            <li class="libg">
-              <input type="text" class="search-filed" value="search here..."/>
-            </li>
-            <li><img src="images/search-bt.jpg" alt="" /></li>
-          </ul>
-        </div>
-        <div class="clear"></div>
-      </div>
     </div>
     <div class="clear"></div>
   </div>
@@ -150,31 +164,30 @@
     <div class="panel">
       <div class="title">
         <h1>ABOUT US</h1>
-        <h2>Aliquam id felis vitae tellus</h2>
+        <h2>Our Customer reviews define us!</h2>
         <div class="content">
-          <P>Becenas neque ante,  congue condim
-            entum ipsum. Integer et enim a massa dictum conguebitur tempor.</P>
+          <P>Our immense experience in the telecom field
+           is clearly seen in our achievements</P>
         </div>
       </div>
     </div>
     <div class="panel">
       <div class="title">
         <h1>CONTACT US</h1>
-        <h2>Ipsum vestibulum non ferme</h2>
+        <h2>Satcom Towers, Spokane</h2>
         <div class="content">
-          <P><a href="info@sitename.com">info@sitename.com</a> </P>
-          <h3>( 000 ) 888 8888</h3>
+          <P><a href="info@sitename.com">info@satcom.com</a> </P>
+          <h3>+1 206-736-5436</h3>
         </div>
       </div>
     </div>
     <div class="panel border-right">
       <div class="title">
         <h1>COPY RIGHT</h1>
-        <h2>Ultrices dictum etut urna.</h2>
+        <h2>All rights reserved.</h2>
         <div class="content">
-          <p>websitename. All rights reserved. </p>
-          <p><a href="www.alltemplateneeds.com" target="_blank" class="active">www.alltemplateneeds.com</a> </p>
-          <P>Images by: <a href="www.photorack.net" target="_blank"> www.photorack.net</a></P>
+          <p>Satcom Pvt Ltd. All rights reserved. </p>
+          <p><a href="www.satcom.com" target="_blank" class="active">www.satcom.com</a> </p>
         </div>
       </div>
     </div>
@@ -183,5 +196,6 @@
 </div>
 <!----footer-wrapper-------->
 <!-- end of WRAPPER -->
+<script src="js/chatbot.js"></script>
 </body>
 </html>

@@ -5,6 +5,12 @@
 <title>TMPH00028</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/jquery-1.9.1.js"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'/>
+<script type="text/javascript" src="js/carouselScript.js"></script>
+<link href="css/carousel.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style-chatbot.css">
 </head>
 <body>
 <div class="social-wrapper">
@@ -23,7 +29,7 @@
 <div class="header">
   <div class="row">
     <div class="logo">
-      <h1>SITE NAME</h1>
+      <h1>SatCom Private LTD</h1>
     </div>
     <div class="menu">
       <ul>
@@ -36,6 +42,36 @@
       </ul>
     </div>
   </div>
+  <div class='search-and-account'>
+		<img class="pointer" height="50" width="90" src="images/chatimage.jpg" alt="" onclick="showchatbot()"/>
+
+  </div>
+
+  <!-- Pop up of chat box  -->
+    <div id="myDIV" class="chatbot-container search-and-account">
+        <div id="header">
+            <h1 id="chatbotheader">Chatbot</h1>
+			<h1 class="pointer" style="padding-left:10px" onclick="hidechatbot()">X</h1>
+        </div>
+        <div id="chatbot">
+            <div id="conversation">
+              <div class="chatbot-message">
+                <p class="chatbot-text">Hi! 👋 it's great to see you!</p>
+              </div>
+            </div>
+            <form id="input-form">
+              <message-container>
+                <input id="input-field" type="text" placeholder="Type your message here">
+                <button id="submit-button"  type="submit" value="Send">
+                  <img class="send-icon" src="images/arrow-small.jpg" alt="">
+                </button>
+              </message-container>
+
+            </form>
+        </div>
+
+    </div>
+
   <div class="clear"></div>
 </div>
 <!-- end of MENU WRAPPER -->
@@ -44,19 +80,18 @@
     <div class="left-panel">
       <div class="panel">
         <div class="title">
-          <h1>ENIAN FEUGIAT BLANDIT NEQUE</h1>
-          <h2>Vivamus et augue sed orci auctor</h2>
+          <h1>Major Subjects Telecommunications</h1>
+          <h2>Wired, Wireless, Satellite telecommunication</h2>
         </div>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
-          <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
-          <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
-          <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
-          <p>Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue. Integer eu magna sit amet metus fermentum posuere. Morbi sit amet nulla sed dolor elementum imperdiet. Quisque fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque adipiscing eros ut libero. Ut condimentum mi vel tellus. Suspendisse laoreet. Fusce ut est sed dolor gravida convallis. Morbi vitae ante. Vivamus ultrices luctus nunc. Suspendisse et dolor. Etiam dignissim. Proin malesuada adipiscing lacus. Donec metus. Curabitur gravida.</p>
-          <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
-          <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
-          <p>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit.</p>
-          <p> Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo.</p>
+          <p>The Telecom Infra Project (TIP) is a global community of companies and organizations working together to accelerate the development and deployment of open, disaggregated, and standards-based technology solutions that deliver the high quality connectivity that the world needs – now and in the decades to come.</p>
+          <p>Access, The Access project groups are creating innovative infrastructure solutions, technologies, and methodologies to bring more people internet access across all corners of the globe. Access is focused on removing some of the key blockers that make the connection to the end user difficult.</p>
+          <p>Transport, To keep the pace of exponential growth in network traffic, better backhaul is essential. Our Transport project groups are addressing the scalability, fast convergence, ease of configuration and extensibility challenges in wireless and wired backhaul.</p>
+          <p>Core and Services. The most significant costs associated with a network are the ongoing costs of operations and maintenance. The Core & Services project groups are simplifying the core network architecture and improving efficiency and flexibility while reducing capex and opex costs associated with keeping a network up and running.</p>
+          <p>a telecommunication network is a group of computational and networking resources used to send data to various destinations. A telecommunication network consists of network nodes connected by telecommunications links that allow for sending of information.</p>
+          <p>To transmit data and indications, the linkages could employ a variety of methods depending on circuit-switched networks, messages, or packet switching approaches. In this domain, managing algorithms and architectures had long been utilized in a wide range of information technology in traditional communication systems.</p>
+          <p>The processes of managing flexibility are critical because they ensure that the expenditure of the service provider in monitoring systems is increasing and that greater services and networking functions of management may be performed. Let us first start with the important subjects in telecommunication.</p>
+          <p>As we have been guiding research telecommunication projects and finally here projects related to telecommunication for more than 15 years and we have gained immense experience in the field. So you can talk to our experts at any time in your project journey. Let us now justify the importance of our Telecommunication project guidance.</p>
         </div>
       </div>
       <div class="clear"></div>
@@ -64,8 +99,8 @@
     <div class="right-panel">
       <div class="contact-panel">
         <div class="title">
-          <h1>PROIN A RISUS</h1>
-          <span>Vestibulum suscipit nib</span></div>
+          <h1>Customer Details</h1>
+          <span>Provide all info</span></div>
         <div class="form">
           <ul>
             <li>
@@ -92,34 +127,20 @@
       <div class="clear"></div>
       <div class="panel martop">
         <div class="title">
-          <h1>DUIS AT LACUS</h1>
-          <h2>Sed sagittis mi scelerisque</h2>
+          <h1>Company business more Info</h1>
+          <h2>References</h2>
         </div>
         <div class="content">
           <ul>
-            <li><a href="#">Posuere justo velitet laotinoc us</a></li>
-            <li><a href="#">Donec egestas diam sed odiotio</a></li>
-            <li><a href="#">Integer eu nibh vitae massa kun</a></li>
-            <li><a href="#">Lorem ipsum dolor sit amet, con</a></li>
+            <li><a href="#">Wireless infrastructure equipment</a></li>
+            <li><a href="#">Landline infrastructure equipment</a></li>
+            <li><a href="#">Networking devices</a></li>
+            <li><a href="#">chat with agent on any queries</a></li>
           </ul>
         </div>
         <div class="clear"></div>
       </div>
       <div class="clear"></div>
-      <div class="contact-panel padding-bottm">
-        <div class="title">
-          <h1>ALIQUAM ADIPIS</h1>
-          <span>Suspendisse ut urna enim</span></div>
-        <div class="search">
-          <ul>
-            <li class="libg">
-              <input type="text" class="search-filed" value="search here..."/>
-            </li>
-            <li><img src="images/search-bt.jpg" alt="" /></li>
-          </ul>
-        </div>
-        <div class="clear"></div>
-      </div>
     </div>
     <div class="clear"></div>
   </div>
@@ -131,31 +152,30 @@
     <div class="panel">
       <div class="title">
         <h1>ABOUT US</h1>
-        <h2>Aliquam id felis vitae tellus</h2>
+        <h2>Our Customer reviews define us!</h2>
         <div class="content">
-          <P>Becenas neque ante,  congue condim
-            entum ipsum. Integer et enim a massa dictum conguebitur tempor.</P>
+          <P>Our immense experience in the telecom field
+           is clearly seen in our achievements</P>
         </div>
       </div>
     </div>
     <div class="panel">
       <div class="title">
         <h1>CONTACT US</h1>
-        <h2>Ipsum vestibulum non ferme</h2>
+        <h2>Satcom Towers, Spokane</h2>
         <div class="content">
-          <P><a href="info@sitename.com">info@sitename.com</a> </P>
-          <h3>( 000 ) 888 8888</h3>
+          <P><a href="info@sitename.com">info@satcom.com</a> </P>
+          <h3>+1 206-736-5436</h3>
         </div>
       </div>
     </div>
     <div class="panel border-right">
       <div class="title">
         <h1>COPY RIGHT</h1>
-        <h2>Ultrices dictum etut urna.</h2>
+        <h2>All rights reserved.</h2>
         <div class="content">
-          <p>websitename. All rights reserved. </p>
-          <p><a href="www.alltemplateneeds.com" target="_blank" class="active">www.alltemplateneeds.com</a> </p>
-          <P>Images by: <a href="www.photorack.net" target="_blank"> www.photorack.net</a></P>
+          <p>Satcom Pvt Ltd. All rights reserved. </p>
+          <p><a href="www.satcom.com" target="_blank" class="active">www.satcom.com</a> </p>
         </div>
       </div>
     </div>
@@ -164,5 +184,6 @@
 </div>
 <!----footer-wrapper-------->
 <!-- end of WRAPPER -->
+<script src="js/chatbot.js"></script>
 </body>
 </html>

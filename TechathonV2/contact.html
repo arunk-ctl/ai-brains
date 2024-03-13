@@ -5,6 +5,12 @@
 <title>TMPH00028</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/jquery-1.9.1.js"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'/>
+<script type="text/javascript" src="js/carouselScript.js"></script>
+<link href="css/carousel.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style-chatbot.css">
 </head>
 <body>
 <div class="social-wrapper">
@@ -23,7 +29,7 @@
 <div class="header">
   <div class="row">
     <div class="logo">
-      <h1>SITE NAME</h1>
+      <h1>SatCom Private LTD</h1>
     </div>
     <div class="menu">
       <ul>
@@ -36,8 +42,39 @@
       </ul>
     </div>
   </div>
+  <div class='search-and-account'>
+		<img class="pointer" height="50" width="90" src="images/chatimage.jpg" alt="" onclick="showchatbot()"/>
+
+  </div>
+
+  <!-- Pop up of chat box  -->
+    <div id="myDIV" class="chatbot-container search-and-account">
+        <div id="header">
+            <h1 id="chatbotheader">Chatbot</h1>
+			<h1 class="pointer" style="padding-left:10px" onclick="hidechatbot()">X</h1>
+        </div>
+        <div id="chatbot">
+            <div id="conversation">
+              <div class="chatbot-message">
+                <p class="chatbot-text">Hi! 👋 it's great to see you!</p>
+              </div>
+            </div>
+            <form id="input-form">
+              <message-container>
+                <input id="input-field" type="text" placeholder="Type your message here">
+                <button id="submit-button"  type="submit" value="Send">
+                  <img class="send-icon" src="images/arrow-small.jpg" alt="">
+                </button>
+              </message-container>
+
+            </form>
+        </div>
+
+    </div>
+
   <div class="clear"></div>
 </div>
+
 <!-- end of MENU WRAPPER -->
 <div class="page padding-bottom">
   <div class="content_wrap">
@@ -45,7 +82,7 @@
       <div class="generic-content">
         <div class="title">
           <h1>Contact us</h1>
-          <h2>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</h2>
+          <h2>In order to establish or growth business with us please contact on below company information.</h2>
         </div>
         <div class="content">
           <div class="address martop">
@@ -54,10 +91,10 @@
                 <h1>Address - 01</h1>
               </div>
               <div class="content">
-                <p>Block No:5, Some where Road,<br />
-                  City name, State, Country name</p>
-                <p class="padTop"><span>Phone :</span> 000 888 88888</p>
-                <p><span>Email :</span> <a href="mailto:info@companyname.com">info@companyname.com</a></p>
+                <p>2025 1st Ave Suite 800,<br />
+                  Spokane, Washington, USA</p>
+                <p class="padTop"><span>Phone :</span> +1 206-736-5436</p>
+                <p><span>Email :</span> <a href="mailto:info@softcom.com">info@softcom.com</a></p>
               </div>
             </div>
             <div class="panel marginTop">
@@ -65,9 +102,9 @@
                 <h1>Address - 02</h1>
               </div>
               <div class="content">
-                <p>Block No:5, Some where Road,<br />
-                  City name, State, Country name</p>
-                <p class="padTop"><span>Phone :</span> 000 888 88888</p>
+                <p>500 Mercer St,<br />
+                  Seattle, Washington, USA</p>
+                <p class="padTop"><span>Phone :</span>+1 206-736-5437</p>
                 <p><span>Email :</span> <a href="mailto:info@companyname.com">info@companyname.com</a></p>
               </div>
             </div>
@@ -79,8 +116,8 @@
     <div class="right-panel">
       <div class="contact-panel">
         <div class="title">
-          <h1>PROIN A RISUS</h1>
-          <span>Vestibulum suscipit nib</span></div>
+          <h1>Customer Details</h1>
+          <span>Provide all info</span></div>
         <div class="form">
           <ul>
             <li>
@@ -107,15 +144,15 @@
       <div class="clear"></div>
       <div class="panel martop">
         <div class="title">
-          <h1>DUIS AT LACUS</h1>
-          <h2>Sed sagittis mi scelerisque</h2>
+          <h1>business more Info</h1>
+          <h2>References</h2>
         </div>
         <div class="content">
           <ul>
-            <li><a href="#">Posuere justo velitet laotinoc us</a></li>
-            <li><a href="#">Donec egestas diam sed odiotio</a></li>
-            <li><a href="#">Integer eu nibh vitae massa kun</a></li>
-            <li><a href="#">Lorem ipsum dolor sit amet, con</a></li>
+            <li><a href="#">Wireless infrastructure equipment</a></li>
+            <li><a href="#">Landline infrastructure equipment</a></li>
+            <li><a href="#">Networking devices</a></li>
+            <li><a href="#">chat with agent on any queries</a></li>
           </ul>
         </div>
         <div class="clear"></div>
@@ -132,31 +169,30 @@
     <div class="panel">
       <div class="title">
         <h1>ABOUT US</h1>
-        <h2>Aliquam id felis vitae tellus</h2>
+        <h2>Our Customer reviews define us!</h2>
         <div class="content">
-          <P>Becenas neque ante,  congue condim
-            entum ipsum. Integer et enim a massa dictum conguebitur tempor.</P>
+          <P>Our immense experience in the telecom field
+           is clearly seen in our achievements</P>
         </div>
       </div>
     </div>
     <div class="panel">
       <div class="title">
         <h1>CONTACT US</h1>
-        <h2>Ipsum vestibulum non ferme</h2>
+        <h2>Satcom Towers, Spokane</h2>
         <div class="content">
-          <P><a href="info@sitename.com">info@sitename.com</a> </P>
-          <h3>( 000 ) 888 8888</h3>
+          <P><a href="info@sitename.com">info@satcom.com</a> </P>
+          <h3>+1 206-736-5436</h3>
         </div>
       </div>
     </div>
     <div class="panel border-right">
       <div class="title">
         <h1>COPY RIGHT</h1>
-        <h2>Ultrices dictum etut urna.</h2>
+        <h2>All rights reserved.</h2>
         <div class="content">
-          <p>websitename. All rights reserved. </p>
-          <p><a href="www.alltemplateneeds.com" target="_blank" class="active">www.alltemplateneeds.com</a> </p>
-          <P>Images by: <a href="www.photorack.net" target="_blank"> www.photorack.net</a></P>
+          <p>Satcom Pvt Ltd. All rights reserved. </p>
+          <p><a href="www.satcom.com" target="_blank" class="active">www.satcom.com</a> </p>
         </div>
       </div>
     </div>
@@ -165,5 +201,6 @@
 </div>
 <!----footer-wrapper-------->
 <!-- end of WRAPPER -->
+<script src="js/chatbot.js"></script>
 </body>
 </html>

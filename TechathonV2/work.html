@@ -5,6 +5,11 @@
 <title>TMPH00028</title>
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.9.1.js"/>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'/>
+<script type="text/javascript" src="js/carouselScript.js"></script>
+<link href="css/carousel.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style-chatbot.css">
 </head>
 <body>
 <div class="social-wrapper">
@@ -23,7 +28,7 @@
 <div class="header">
   <div class="row">
     <div class="logo">
-      <h1>SITE NAME</h1>
+      <h1>SatCom Private LTD</h1>
     </div>
     <div class="menu">
       <ul>
@@ -36,6 +41,36 @@
       </ul>
     </div>
   </div>
+  <div class='search-and-account'>
+		<img class="pointer" height="50" width="90" src="images/chatimage.jpg" alt="" onclick="showchatbot()"/>
+
+  </div>
+
+  <!-- Pop up of chat box  -->
+    <div id="myDIV" class="chatbot-container search-and-account">
+        <div id="header">
+            <h1 id="chatbotheader">Chatbot</h1>
+			<h1 class="pointer" style="padding-left:10px" onclick="hidechatbot()">X</h1>
+        </div>
+        <div id="chatbot">
+            <div id="conversation">
+              <div class="chatbot-message">
+                <p class="chatbot-text">Hi! 👋 it's great to see you!</p>
+              </div>
+            </div>
+            <form id="input-form">
+              <message-container>
+                <input id="input-field" type="text" placeholder="Type your message here">
+                <button id="submit-button"  type="submit" value="Send">
+                  <img class="send-icon" src="images/arrow-small.jpg" alt="">
+                </button>
+              </message-container>
+
+            </form>
+        </div>
+
+    </div>
+
   <div class="clear"></div>
 </div>
 <!-- end of MENU WRAPPER -->
@@ -44,42 +79,42 @@
     <div class="portfolio">
       <div class="title">
         <h1>Work</h1>
-        <h2>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus hasellus ultrices nulla quis nibh. Quisque a lectus.</h2>
+        <h2>Perform network modeling, analysis, and planning, including analysis of capacity needs for network infrastructures. May also design network and computer security measures. May research and recommend network and data communications hardware and software.</h2>
       </div>
       <div class="panel marRight30">
         <div class="content"> <img src="images/img4.jpg" />
-          <p><span>Project Name</span></p>
-          <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.</p>
+          <p><span>Enhancement on Network</span></p>
+          <p>Network Enhancement (NE) is a general method to denoise weighted biological networks.</p>
           <a href="#">visit site</a> </div>
       </div>
       <div class="panel marRight30">
         <div class="content"> <img src="images/img5.jpg" />
-          <p><span>Project Name</span></p>
-          <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. </p>
+          <p><span>Energy Consumption</span></p>
+          <p>Energy Meter with Automatic Usage Monitoring and Alarm System - Extra Power Requisition System. </p>
           <a href="#">visit site</a> </div>
       </div>
       <div class="panel">
         <div class="content"> <img src="images/img6.jpg" />
-          <p><span>Project Name</span></p>
-          <p>Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum</p>
+          <p><span>security issues in voip</span></p>
+          <p>Security Issues in voice over internet protocol:VOIP security issues appear to be build in response growth</p>
           <a href="#">visit site</a> </div>
       </div>
       <div class="panel marRight30">
         <div class="content"> <img src="images/img4.jpg" />
-          <p><span>Project Name</span></p>
-          <p>Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum</p>
+          <p><span>Power Failure</span></p>
+          <p>Power Failure Auto Announcement System at Customer Place from EB Station.</p>
           <a href="#">visit site</a> </div>
       </div>
       <div class="panel marRight30">
         <div class="content"> <img src="images/img5.jpg" />
-          <p><span>Project Name</span></p>
-          <p>Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate </p>
+          <p><span>Intelligent Train System</span></p>
+          <p>Automation, Collision Avoidance, Signal / Unmanned Controlling, Moving Message Display, Voice Annunciation.</p>
           <a href="#">visit site</a> </div>
       </div>
       <div class="panel">
         <div class="content"> <img src="images/img6.jpg" />
-          <p><span>Project Name</span></p>
-          <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem.</p>
+          <p><span>Artificial Intelligence</span></p>
+          <p>It services like virtual assistants and messaging chatbots that are enhance the customer experience.</p>
           <a href="#">visit site</a> </div>
       </div>
     </div>
@@ -93,31 +128,30 @@
     <div class="panel">
       <div class="title">
         <h1>ABOUT US</h1>
-        <h2>Aliquam id felis vitae tellus</h2>
+        <h2>Our Customer reviews define us!</h2>
         <div class="content">
-          <P>Becenas neque ante,  congue condim
-            entum ipsum. Integer et enim a massa dictum conguebitur tempor.</P>
+          <P>Our immense experience in the telecom field
+           is clearly seen in our achievements</P>
         </div>
       </div>
     </div>
     <div class="panel">
       <div class="title">
         <h1>CONTACT US</h1>
-        <h2>Ipsum vestibulum non ferme</h2>
+        <h2>Satcom Towers, Spokane</h2>
         <div class="content">
-          <P><a href="info@sitename.com">info@sitename.com</a> </P>
-          <h3>( 000 ) 888 8888</h3>
+          <P><a href="info@sitename.com">info@satcom.com</a> </P>
+          <h3>+1 206-736-5436</h3>
         </div>
       </div>
     </div>
     <div class="panel border-right">
       <div class="title">
         <h1>COPY RIGHT</h1>
-        <h2>Ultrices dictum etut urna.</h2>
+        <h2>All rights reserved.</h2>
         <div class="content">
-          <p>websitename. All rights reserved. </p>
-          <p><a href="www.alltemplateneeds.com" target="_blank" class="active">www.alltemplateneeds.com</a> </p>
-          <P>Images by: <a href="www.photorack.net" target="_blank"> www.photorack.net</a></P>
+          <p>Satcom Pvt Ltd. All rights reserved. </p>
+          <p><a href="www.satcom.com" target="_blank" class="active">www.satcom.com</a> </p>
         </div>
       </div>
     </div>
@@ -126,5 +160,6 @@
 </div>
 <!----footer-wrapper-------->
 <!-- end of WRAPPER -->
+<script src="js/chatbot.js"></script>
 </body>
 </html>

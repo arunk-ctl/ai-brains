@@ -19,6 +19,7 @@ inputForm.addEventListener('submit', function(event) {
   conversation.appendChild(message);
 
   // Generate chatbot response
+  conversation.scrollTop=conversation.scrollHeight;
   if(count<4)
   {
    process(input, function (error, response) {
@@ -33,6 +34,7 @@ inputForm.addEventListener('submit', function(event) {
   message.classList.add('chatbot-message','chatbot');
   message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${response1}</p>`;
   conversation.appendChild(message);
+  conversation.scrollTop=conversation.scrollHeight;
     }
 });
   }
@@ -130,4 +132,3 @@ inputForm.addEventListener('submit', function(event) {
             // Set its display property to 'none'
             chatbox.style.display = 'none';
         };
-

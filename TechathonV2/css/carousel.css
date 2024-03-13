@@ -5,5 +5,3 @@
 /* width of the item, in this case I put 250x250x gif */
 #slides li { width:458px; height:498px; float:left; display: block; position: absolute; }
 #slides li img { }
-
-
