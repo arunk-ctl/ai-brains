@@ -93,6 +93,15 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  .user-text {
+    background-color: #66c2ff;
+    color: #333333;
+    font-size: 1.1em;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
   
   #input-form {
     display: flex;

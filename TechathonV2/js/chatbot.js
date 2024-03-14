@@ -15,7 +15,7 @@ inputForm.addEventListener('submit', function(event) {
   // Adding user input to conversation
   let message = document.createElement('div');
   message.classList.add('chatbot-message', 'user-message');
-  message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${input}</p>`;
+  message.innerHTML = `<p class="user-text" sentTime="${currentTime}">${input}</p>`;
   conversation.appendChild(message);
 
   // Generate chatbot response
