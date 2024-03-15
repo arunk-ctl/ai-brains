@@ -40,7 +40,7 @@ inputForm.addEventListener('submit', function(event) {
   }
   else
   {
-  const timeout="Hope the issue is not resolved. I will create a ticket for assistance from our executive."
+  const timeout="Looks like the issue is not resolved. I will create a ticket for assistance from our executive."
   message = document.createElement('div');
   message.classList.add('chatbot-message','chatbot');
   message.innerHTML = `<p class="chatbot-text" sentTime="${currentTime}">${timeout}</p>`;
